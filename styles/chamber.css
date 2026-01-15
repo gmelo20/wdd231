@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+  margin-top: 60px; /* empurra o hero para baixo do header */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.cta {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.events, .weather, .forecast {
+  background: #eee;
+  padding: 1rem;
+}
+
+.spotlights {
+  padding: 1rem;
+}

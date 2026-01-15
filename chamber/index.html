@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Montevideo Chamber of Commerce">
+<meta name="author" content="Gabriel Melo">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Montevideo Chamber of Commerce</title>
+
+<link rel="stylesheet" href="../styles/small.css">
+<link rel="stylesheet" href="../styles/larger.css">
+<link rel="stylesheet" href="../styles/chamber.css">
+
+<script src="../scripts/navigation.js" defer></script>
+<script src="../scripts/date.js" defer></script>
+<script src="../scripts/chamber.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Montevideo Chamber</div>
+<button id="menu">&#9776;</button>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="discover.html">Discover</a>
+<a href="directory.html">Directory</a>
+<a href="join.html">Join</a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<img src="../images/hero.jpg" alt="Montevideo city">
+<a class="cta" href="join.html">Join the Chamber</a>
+</section>
+
+<section class="grid">
+
+<div class="events">
+<h2>Events</h2>
+<p>Business networking night – Feb 20</p>
+<p>Startup Workshop – Mar 3</p>
+</div>
+
+<div class="weather">
+<h2>Current Weather</h2>
+<p><span id="temp"></span>°F</p>
+<p id="condition"></p>
+</div>
+
+<div class="forecast">
+<h2>Forecast</h2>
+<p id="forecast"></p>
+</div>
+
+</section>
+
+<section class="spotlights">
+<h2>Business Spotlights</h2>
+<div id="spotlight-container"></div>
+</section>
+
+</main>
+
+<footer>
+<p>© <span id="currentyear"></span> Montevideo Chamber | Gabriel Melo</p>
+<p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

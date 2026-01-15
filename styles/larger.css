@@ -1,0 +1,39 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: start;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.about,
+.certificates {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #menu {
+    display: none;
+  }
+}
