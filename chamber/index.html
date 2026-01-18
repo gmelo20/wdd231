@@ -1,75 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Montevideo Chamber of Commerce">
-<meta name="author" content="Gabriel Melo">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Montevideo Chamber of Commerce</title>
-
-<link rel="stylesheet" href="../styles/small.css">
-<link rel="stylesheet" href="../styles/larger.css">
-<link rel="stylesheet" href="../styles/chamber.css">
-
-<script src="../scripts/navigation.js" defer></script>
-<script src="../scripts/date.js" defer></script>
-<script src="../scripts/chamber.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montevideo Chamber of Commerce - Promoting Uruguayan businesses and economic growth">
+    <meta name="author" content="Gabriel Melo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Montevideo Chamber of Commerce">
+    <meta property="og:description" content="Join the Chamber and grow your business in Montevideo, Uruguay">
+    <meta property="og:image" content="https://gabrielmelo.github.io/wdd231/chamber/images/montevideo-hero.jpg">
+    <meta property="og:url" content="https://gabrielmelo.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Montevideo Chamber of Commerce">
+    <meta name="twitter:description" content="Join the Chamber and grow your business in Montevideo, Uruguay">
+    <meta name="twitter:image" content="https://gabrielmelo.github.io/wdd231/chamber/images/montevideo-hero.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/chamber/images/uruguai.png" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <title>Montevideo Chamber of Commerce - Home</title>
 </head>
-
 <body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="/chamber/images/hero.jpg" alt="Montevideo Chamber Logo">
+                <div>
+                    <h1>Montevideo Chamber of Commerce</h1>
+                    <p class="tagline">Uruguay's Business Network</p>
+                </div>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="date-banner">
+            📅 <span id="current-date">Montevideo, Uruguay</span>
+        </div>
+    </header>
 
-<header>
-<div class="logo">Montevideo Chamber</div>
-<button id="menu">&#9776;</button>
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 768px)" srcset="/chamber/images/hero.jpg">
+                <source media="(min-width: 769px)" srcset="/chamber/images/hero.jpg">
+                <img src="/chamber/images/hero.jpg" alt="Montevideo cityscape with Rambla" loading="eager">
+            </picture>
+            <div class="hero-text">
+                <h2>Boost Your Business in Uruguay</h2>
+                <p>Join 500+ companies growing with us</p>
+                <a href="join.html" class="cta-button">Become a Member →</a>
+            </div>
+        </section>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="discover.html">Discover</a>
-<a href="directory.html">Directory</a>
-<a href="join.html">Join</a>
-</nav>
-</header>
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+            <!-- Events -->
+            <section class="card events">
+                <h2>📅 Upcoming Events</h2>
+                <div class="event-item">
+                    <h3>Business Networking Night</h3>
+                    <p><strong>Date:</strong> February 20, 2024</p>
+                    <p><strong>Time:</strong> 7:00 PM</p>
+                    <p><strong>Location:</strong> Chamber Building, Montevideo</p>
+                    <a href="#">Register Now</a>
+                </div>
+                <div class="event-item">
+                    <h3>Startup Workshop</h3>
+                    <p><strong>Date:</strong> March 3, 2024</p>
+                    <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+                    <p><strong>Location:</strong> Innovation Center, Montevideo</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </section>
 
-<main>
+            <!-- Weather -->
+            <section class="card weather">
+                <h2>🌤️ Montevideo Weather</h2>
+                <div class="weather-info">
+                    <div class="temp-display">
+                        <span id="current-temp">72°F</span>
+                        <img id="weather-icon" src="/chamber/images/weather-forecast.png" alt="Sunny">
+                    </div>
+                    <p id="weather-desc">Sunny and clear</p>
+                    <div class="weather-details">
+                        <p>Humidity: <span id="humidity">65%</span></p>
+                        <p>Wind: <span id="wind-speed">12 mph</span></p>
+                    </div>
+                </div>
+            </section>
 
-<section class="hero">
-<img src="../images/hero.jpg" alt="Montevideo city">
-<a class="cta" href="join.html">Join the Chamber</a>
-</section>
+            <!-- Forecast -->
+            <section class="card forecast">
+                <h2>📊 3-Day Forecast</h2>
+                <div class="forecast-container" id="forecast-container">
+                    <div class="forecast-day">
+                        <p>Tomorrow</p>
+                        <p>🌤️ 75°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Wed</p>
+                        <p>☀️ 78°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Thu</p>
+                        <p>🌦️ 70°F</p>
+                    </div>
+                </div>
+            </section>
 
-<section class="grid">
+            <!-- Business Highlights -->
+            <section class="card highlights">
+                <h2>⭐ Featured Members</h2>
+                <div id="spotlights">
+                    <div class="spotlight-card">
+                        <h3>Tech Solutions Uruguay</h3>
+                        <p>Leading IT provider in Montevideo</p>
+                        <span class="membership-badge">Gold Member</span>
+                        <p><a href="https://techsolutions.uy" target="_blank">Visit Website</a></p>
+                    </div>
+                    <div class="spotlight-card">
+                        <h3>Punta del Este Tourism</h3>
+                        <p>Uruguay's premier tourism agency</p>
+                        <span class="membership-badge">Silver Member</span>
+                        <p><a href="https://puntadelestetourism.com" target="_blank">Explore</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-<div class="events">
-<h2>Events</h2>
-<p>Business networking night – Feb 20</p>
-<p>Startup Workshop – Mar 3</p>
-</div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p><strong>Montevideo Chamber of Commerce</strong></p>
+                    <p>📍 Av. 18 de Julio 1234, Montevideo, Uruguay</p>
+                    <p>📧 info@montevideochamber.com</p>
+                    <p>📞 +598 2 123 4567</p>
+                </div>
+                
+                <div class="social-media">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="/chamber/images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="/chamber/images/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="/chamber/images/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="/chamber/images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="directory.html">Business Directory</a></li>
+                        <li><a href="join.html">Membership Benefits</a></li>
+                        <li><a href="discovery.html">Explore Montevideo</a></li>
+                        <li><a href="#">Contact Directory</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="development-info">
+                <p>&copy; <span id="current-year"></span> Montevideo Chamber of Commerce | Gabriel Melo</p>
+                <p>WDD 231 - Web Frontend Development I | BYU-Idaho</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
 
-<div class="weather">
-<h2>Current Weather</h2>
-<p><span id="temp"></span>°F</p>
-<p id="condition"></p>
-</div>
-
-<div class="forecast">
-<h2>Forecast</h2>
-<p id="forecast"></p>
-</div>
-
-</section>
-
-<section class="spotlights">
-<h2>Business Spotlights</h2>
-<div id="spotlight-container"></div>
-</section>
-
-</main>
-
-<footer>
-<p>© <span id="currentyear"></span> Montevideo Chamber | Gabriel Melo</p>
-<p id="lastModified"></p>
-</footer>
-
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

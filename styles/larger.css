@@ -1,39 +1,42 @@
-.home-grid {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  align-items: start;
-}
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.profile {
-  text-align: center;
-}
-
-.profile img {
-  width: 200px;
-  border-radius: 50%;
-}
-
-.about,
-.certificates {
-  margin-bottom: 1.5rem;
-}
-
 @media (min-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  #menu {
-    display: none;
-  }
+    body {
+        padding: 40px;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 2rem;
+    }
+    
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+    
+    .home-grid {
+        grid-template-columns: 300px 1fr;
+        padding: 3rem;
+    }
+    
+    .profile {
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+    }
+    
+    .right-column {
+        gap: 3rem;
+    }
+    
+    .about, .certificates {
+        padding: 2.5rem;
+    }
 }

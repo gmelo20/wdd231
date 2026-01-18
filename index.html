@@ -1,68 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Gabriel Melo WDD231 Course Home">
-<meta name="author" content="Gabriel Melo">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel Melo | WDD231</title>
-
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
-
-<script src="scripts/navigation.js" defer></script>
-<script src="scripts/date.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gabriel Melo - Web Development Student Portfolio | WDD231 Course Home">
+    <meta name="author" content="Gabriel Melo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Gabriel Melo - Web Developer">
+    <meta property="og:description" content="Web Development Student from Uruguay studying at BYU">
+    <meta property="og:image" content="https://gabrielmelo.github.io/wdd231/chamber/images/profile.png">
+    <meta property="og:url" content="https://gabrielmelo.github.io/wdd231/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gabriel Melo - Web Developer">
+    <meta name="twitter:description" content="Web Development Student from Uruguay">
+    <meta name="twitter:image" content="https://gabrielmelo.github.io/wdd231/chamber/images/profile.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="chamber/images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <title>Gabriel Melo | Web Development Student</title>
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <button id="menu" aria-label="Toggle navigation">&#9776;</button>
+            <span>Gabriel Melo</span>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="chamber/index.html">Chamber Project</a>
+                <a href="https://github.com/gmelo20" target="_blank">GitHub</a>
+            </nav>
+        </header>
 
-<header>
-<button id="menu">&#9776;</button>
-<span>Gabriel Melo</span>
-<nav>
-<a href="index.html">Home</a>
-<a href="chamber/index.html">Chamber</a>
-<a href="#">Final</a>
-</nav>
-</header>
+        <main class="home-grid">
+            <section class="profile">
+                <img src="chamber/images/profile.png" alt="Gabriel Melo" loading="lazy">
+                <h1>Gabriel Melo</h1>
+                <p>Web Development Student</p>
+                <div class="location">
+                    <p>📍 Montevideo, Uruguay</p>
+                    <p>🎓 BYU-Idaho</p>
+                    <p>💼 WDD 231 Student</p>
+                </div>
+            </section>
 
-<main class="home-grid">
+            <div class="right-column">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a 25-year-old web development student from Uruguay, currently pursuing my degree at BYU-Idaho. 
+                        As a passionate learner in the tech field, I'm constantly exploring new technologies and building 
+                        projects that challenge my skills.
+                    </p>
+                    <p>
+                        I believe in the power of clean code, intuitive design, and continuous learning. 
+                        When I'm not coding, you can find me enjoying time with my family or exploring the beautiful 
+                        landscapes of Uruguay.
+                    </p>
+                    <div class="skills">
+                        <h3>Tech Stack</h3>
+                        <div class="skills-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Git</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </section>
 
-  <section class="profile">
-    <img src="images/profile.png" alt="Gabriel Melo">
-    <h1>Gabriel Melo</h1>
-    <p>Web Development Student</p>
-  </section>
+                <section class="certificates">
+                    <h2>Certificates & Courses</h2>
+                    <ul>
+                        <li>WDD 231 – Frontend Web Development I</li>
+                        <li>HTML & CSS Fundamentals</li>
+                        <li>JavaScript Basics</li>
+                        <li>Responsive Web Design</li>
+                        <li>Git & GitHub Fundamentals</li>
+                        <li>UI/UX Design Principles</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
 
-<div class="right-column">
+        <footer>
+            <p>© <span id="currentyear"></span> Gabriel Melo - Montevideo, Uruguay</p>
+            <p id="lastModified"></p>
+            <div class="contact-links">
+                <a href="mailto:ggmelo20@gmail.com" class="email-link">📧 Email Me</a>
+                <a href="https://www.linkedin.com/in/ggmelo2000/" target="_blank" class="linkedin-link">💼 LinkedIn</a>
+                <a href="https://github.com/gmelo20" target="_blank" class="github-link">🐱 GitHub</a>
+            </div>
+        </footer>
+    </div>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I live in Uruguay, I am 25 years old, and I am a Web Development student at BYU.
-      I am married and passionate about learning more and more about programming and modern web technologies.
-    </p>
-  </section>
+    <!-- JavaScript -->
+    <script>
+        // Navigation toggle
+        const menu = document.querySelector("#menu");
+        const nav = document.querySelector("nav");
+        
+        menu.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            menu.textContent = nav.classList.contains("open") ? "✕" : "☰";
+        });
 
-  <section class="certificates">
-    <h2>Certificates</h2>
-    <ul>
-      <li>WDD 130 – Web Fundamentals</li>
-      <li>WDD 231 – Frontend Web Development I</li>
-      <li>HTML & CSS Fundamentals</li>
-      <li>JavaScript Basics</li>
-    </ul>
-  </section>
-
-</div>
-
-
-</main>
-
-<footer>
-<p>© <span id="currentyear"></span> Gabriel Melo - Uruguay</p>
-<p id="lastModified"></p>
-</footer>
-
+        // Current year and last modified
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+    </script>
 </body>
 </html>

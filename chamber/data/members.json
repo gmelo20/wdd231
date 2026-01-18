@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Tech Solutions Uruguay",
+        "address": "Av. Italia 2424, Montevideo",
+        "phone": "(+598) 2 123 4567",
+        "website": "https://techsolutions.uy",
+        "image": "tech.jpg",
+        "membershipLevel": 3,
+        "industry": "Technology",
+        "description": "Leading IT provider and software development company in Uruguay"
+    },
+    {
+        "name": "Frigorífico Paysandú",
+        "address": "Ruta 3, Km 12, Paysandú",
+        "phone": "(+598) 472 12345",
+        "website": "https://frigopaysandu.com.uy",
+        "image": "figorifico.jpg",
+        "membershipLevel": 3,
+        "industry": "Agriculture / Meat Processing",
+        "description": "Premium beef exporter, certified organic and grass-fed"
+    },
+    {
+        "name": "Construcción Montevideo SA",
+        "address": "Bvar. Artigas 1234, Montevideo",
+        "phone": "(+598) 2 987 6543",
+        "website": "https://construccionmvdeo.com",
+        "image": "construccion.jpg",
+        "membershipLevel": 2,
+        "industry": "Construction",
+        "description": "Commercial and residential construction with 30+ years experience"
+    },
+    {
+        "name": "La Pulpería Restaurant",
+        "address": "Calle Pérez Castellano 1425, Montevideo",
+        "phone": "(+598) 2 111 2233",
+        "website": "https://lapulperia.uy",
+        "image": "lapulp.jpg",
+        "membershipLevel": 1,
+        "industry": "Restaurant",
+        "description": "Traditional Uruguayan parrilla and local cuisine"
+    },
+    {
+        "name": "Panadería Artesanal del Puerto",
+        "address": "Rambla 25 de Agosto 456, Montevideo",
+        "phone": "(+598) 2 333 4444",
+        "website": "https://panaderiapuerto.uy",
+        "image": "panaderia.jpg",
+        "membershipLevel": 1,
+        "industry": "Bakery",
+        "description": "Artisanal breads, pastries, and traditional Uruguayan baked goods"
+    },
+    {
+        "name": "Banco República (BROU)",
+        "address": "Cerrito 351, Montevideo",
+        "phone": "(+598) 2 900 1234",
+        "website": "https://www.brou.com.uy",
+        "image": "brou.png",
+        "membershipLevel": 3,
+        "industry": "Banking & Finance",
+        "description": "Uruguay's state-owned bank, serving individuals and businesses"
+    },
+    {
+        "name": "Ferretería Uruguaya",
+        "address": "Av. 8 de Octubre 1234, Montevideo",
+        "phone": "(+598) 2 555 6666",
+        "website": "https://ferreteriauruguaya.com",
+        "image": "ferreteria.jpg",
+        "membershipLevel": 2,
+        "industry": "Hardware Retail",
+        "description": "Complete hardware store for construction and home improvement"
+    },
+    {
+        "name": "Punta del Este Tourism",
+        "address": "Calle Gorlero 1001, Punta del Este",
+        "phone": "(+598) 42 123 456",
+        "website": "https://puntadelestetourism.com",
+        "image": "punta.jpg",
+        "membershipLevel": 2,
+        "industry": "Tourism",
+        "description": "Tour packages, hotels, and experiences in Uruguay's premier beach destination"
+    },
+    {
+        "name": "Bodega Juanicó",
+        "address": "Ruta 5, Km 39, Canelones",
+        "phone": "(+598) 433 12345",
+        "website": "https://bodegajuánico.com",
+        "image": "juanico.jpg",
+        "membershipLevel": 3,
+        "industry": "Wine Production",
+        "description": "Award-winning Uruguayan winery, known for Tannat wines"
+    },
+    {
+        "name": "Logística del Plata",
+        "address": "Zona Franca, Montevideo",
+        "phone": "(+598) 2 777 8888",
+        "website": "https://logisticadelplata.com",
+        "image": "logistica.jpg",
+        "membershipLevel": 2,
+        "industry": "Logistics & Shipping",
+        "description": "Port logistics and international shipping services"
+    }
+]

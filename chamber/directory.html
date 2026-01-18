@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montevideo Chamber of Commerce - Business Directory">
+    <meta name="author" content="Gabriel Melo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Montevideo Chamber - Business Directory">
+    <meta property="og:description" content="Find Uruguayan businesses and Chamber members">
+    <meta property="og:image" content="https://gabrielmelo.github.io/wdd231/chamber/images/montevideo-hero.jpg">
+    <meta property="og:url" content="https://gabrielmelo.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Montevideo Chamber - Business Directory">
+    <meta name="twitter:description" content="Find Uruguayan businesses and Chamber members">
+    <meta name="twitter:image" content="https://gabrielmelo.github.io/wdd231/chamber/images/montevideo-hero.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/chamber/images/download (1).jpg" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <title>Business Directory - Montevideo Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/chamber/images/hero.jpg" alt="Montevideo Chamber Logo">
+            <div>
+                <h1>Montevideo Chamber of Commerce</h1>
+                <p class="tagline">Connecting Uruguayan Businesses</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html">Discovery</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Business Directory</h1>
+        <p class="directory-intro">Explore our network of Uruguayan businesses. Filter by industry or membership level.</p>
+        
+        <!-- View Toggle Buttons -->
+        <div class="view-toggle">
+            <button id="grid-view" class="active">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        
+        <!-- Industry Filter -->
+        <div class="filter-section">
+            <label for="industry-filter">Filter by Industry:</label>
+            <select id="industry-filter">
+                <option value="all">All Industries</option>
+                <option value="Technology">Technology</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Construction">Construction</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Banking & Finance">Banking & Finance</option>
+                <option value="Tourism">Tourism</option>
+                <option value="Wine Production">Wine Production</option>
+                <option value="Logistics & Shipping">Logistics & Shipping</option>
+            </select>
+        </div>
+        
+        <!-- Directory Container -->
+        <div id="directory-container" class="grid-view">
+            <!-- Cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Montevideo Chamber of Commerce</h3>
+                <p>📍 Av. 18 de Julio 1234, Montevideo, Uruguay</p>
+                <p>📧 info@montevideochamber.com</p>
+                <p>📞 +598 2 123 4567</p>
+            </div>
+            <div class="directory-stats">
+                <h3>Directory Stats</h3>
+                <p><span id="total-members">10</span> Total Members</p>
+                <p><span id="gold-members">4</span> Gold Members</p>
+                <p><span id="silver-members">4</span> Silver Members</p>
+            </div>
+            <div class="development-info">
+                <p>&copy; <span id="current-year"></span> Montevideo Chamber | Gabriel Melo</p>
+                <p>WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
