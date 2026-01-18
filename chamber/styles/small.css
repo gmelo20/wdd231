@@ -492,3 +492,60 @@ footer {
     color: #e74c3c;
     font-size: 1.2rem;
 }
+
+footer .social-icons a {
+    color: white !important;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ffd700 !important;
+    transform: scale(1.1);
+}
+
+.date-banner i {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+
+.contact-info i {
+    color: white;
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: center;
+}
+/* ===== ICONES FONTAWESOME - CORES ===== */
+
+/* Footer - Ícones sociais BRANCOS */
+footer .social-icons a {
+    color: white !important;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #f0f0f0 !important;
+    transform: scale(1.1);
+}
+
+/* Data banner (calendário no header) */
+.date-banner i {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+/* Informações de contato no footer */
+.contact-info i {
+    color: white;
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Ícones nos títulos dos cards (podem ficar coloridos) */
+.card h2 i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
