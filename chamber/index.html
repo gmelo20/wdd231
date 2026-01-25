@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +39,7 @@
                     <p class="tagline">Uruguay's Business Network</p>
                 </div>
             </div>
-            <button id="menu-toggle" aria-label="Toggle navigation">â˜°</button>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
             <nav id="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -50,7 +50,7 @@
             </nav>
         </div>
         <div class="date-banner">
-            ðŸ“… <span id="current-date">Montevideo, Uruguay</span>
+            <i class="fas fa-calendar-alt"></i> <span id="current-date">Montevideo, Uruguay</span>
         </div>
     </header>
 
@@ -65,7 +65,7 @@
             <div class="hero-text">
                 <h2>Boost Your Business in Uruguay</h2>
                 <p>Join 500+ companies growing with us</p>
-                <a href="join.html" class="cta-button">Become a Member â†’</a>
+                <a href="join.html" class="cta-button">Become a Member <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
@@ -73,7 +73,7 @@
         <div class="content-grid">
             <!-- Events -->
             <section class="card events">
-                <h2>ðŸ“… Upcoming Events</h2>
+                <h2><i class="fas fa-calendar-alt"></i> Upcoming Events</h2>
                 <div class="event-item">
                     <h3>Business Networking Night</h3>
                     <p><strong>Date:</strong> February 20, 2024</p>
@@ -92,10 +92,10 @@
 
             <!-- Weather -->
             <section class="card weather">
-                <h2>ðŸŒ¤ï¸ Montevideo Weather</h2>
+                <h2><i class="fas fa-sun"></i> Montevideo Weather</h2>
                 <div class="weather-info">
                     <div class="temp-display">
-                        <span id="current-temp">72Â°F</span>
+                        <span id="current-temp">72°F</span>
                         <img id="weather-icon" src="images/weather-forecast.png" alt="Sunny">
                     </div>
                     <p id="weather-desc">Sunny and clear</p>
@@ -108,40 +108,14 @@
 
             <!-- Forecast -->
             <section class="card forecast">
-                <h2>ðŸ“Š 3-Day Forecast</h2>
-                <div class="forecast-container" id="forecast-container">
-                    <div class="forecast-day">
-                        <p>Tomorrow</p>
-                        <p>ðŸŒ¤ï¸ 75Â°F</p>
-                    </div>
-                    <div class="forecast-day">
-                        <p>Wed</p>
-                        <p>â˜€ï¸ 78Â°F</p>
-                    </div>
-                    <div class="forecast-day">
-                        <p>Thu</p>
-                        <p>ðŸŒ¦ï¸ 70Â°F</p>
-                    </div>
-                </div>
+                <h2><i class="fas fa-chart-line"></i> 3-Day Forecast</h2>
+                <div class="forecast-container" id="forecast-container"></div>
             </section>
 
             <!-- Business Highlights -->
             <section class="card highlights">
-                <h2>â­ Featured Members</h2>
-                <div id="spotlights">
-                    <div class="spotlight-card">
-                        <h3>Tech Solutions Uruguay</h3>
-                        <p>Leading IT provider in Montevideo</p>
-                        <span class="membership-badge">Gold Member</span>
-                        <p><a href="https://techsolutions.uy" target="_blank">Visit Website</a></p>
-                    </div>
-                    <div class="spotlight-card">
-                        <h3>Punta del Este Tourism</h3>
-                        <p>Uruguay's premier tourism agency</p>
-                        <span class="membership-badge">Silver Member</span>
-                        <p><a href="https://puntadelestetourism.com" target="_blank">Explore</a></p>
-                    </div>
-                </div>
+                <h2><i class="fas fa-star"></i> Featured Members</h2>
+                <div id="spotlights"></div>
             </section>
         </div>
     </main>
@@ -152,9 +126,9 @@
                 <div class="contact-info">
                     <h3>Contact Us</h3>
                     <p><strong>Montevideo Chamber of Commerce</strong></p>
-                    <p>ðŸ“ Av. 18 de Julio 1234, Montevideo, Uruguay</p>
-                    <p>ðŸ“§ info@montevideochamber.com</p>
-                    <p>ðŸ“ž +598 2 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. 18 de Julio 1234, Montevideo, Uruguay</p>
+                    <p><i class="fas fa-envelope"></i> info@montevideochamber.com</p>
+                    <p><i class="fas fa-phone"></i> +598 2 123 4567</p>
                 </div>
                 
                 <div class="social-media">
@@ -188,7 +162,6 @@
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js"></script>
-    <script src="scripts/date.js"></script>
     <script src="scripts/chamber.js"></script>
 </body>
 </html>
