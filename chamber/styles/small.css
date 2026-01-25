@@ -518,7 +518,7 @@ footer .social-icons a:hover {
 }
 /* ===== ICONES FONTAWESOME - CORES ===== */
 
-/* Footer - Ícones sociais BRANCOS */
+/* Footer - ï¿½cones sociais BRANCOS */
 footer .social-icons a {
     color: white !important;
     text-decoration: none;
@@ -530,13 +530,13 @@ footer .social-icons a:hover {
     transform: scale(1.1);
 }
 
-/* Data banner (calendário no header) */
+/* Data banner (calendï¿½rio no header) */
 .date-banner i {
     color: white;
     margin-right: 0.5rem;
 }
 
-/* Informações de contato no footer */
+/* Informaï¿½ï¿½es de contato no footer */
 .contact-info i {
     color: white;
     margin-right: 0.5rem;
@@ -544,7 +544,7 @@ footer .social-icons a:hover {
     text-align: center;
 }
 
-/* Ícones nos títulos dos cards (podem ficar coloridos) */
+/* ï¿½cones nos tï¿½tulos dos cards (podem ficar coloridos) */
 .card h2 i {
     color: var(--primary-color);
     margin-right: 0.5rem;

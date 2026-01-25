@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #1f4d7a; 
-    --secondary-color: #f0d050; 
-    --accent-color: #f0d050; 
+    --primary-color: #1f4d7a;
+    --secondary-color: #f0d050;
+    --accent-color: #f0d050;
     --background-color: #f8f9fa;
     --text-color: #333;
 }
