@@ -1,0 +1,99 @@
+.join-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.form-card {
+    padding: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input, select, textarea {
+    padding: .6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.cta-btn {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.member-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn .6s forwards;
+}
+
+.member-card:nth-child(2){animation-delay:.2s;}
+.member-card:nth-child(3){animation-delay:.4s;}
+.member-card:nth-child(4){animation-delay:.6s;}
+
+.bronze { border-top: 5px solid #cd7f32; }
+.silver { border-top: 5px solid silver; }
+.gold { border-top: 5px solid gold; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 900px) {
+    .join-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* THANK YOU PAGE */
+
+.thankyou-body {
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.thankyou-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.thankyou-card {
+    padding: 3rem;
+    max-width: 500px;
+    text-align: center;
+}
+
+.summary {
+    text-align: left;
+    margin: 2rem 0;
+    line-height: 1.8;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 1rem;
+}

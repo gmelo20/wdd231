@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join | Montevideo Chamber</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="images/hero.jpg" alt="Logo">
+            <h1>Montevideo Chamber of Commerce</h1>
+        </div>
+
+        <button id="menu-toggle">☰</button>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html">Discovery</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- ================= MAIN ================= -->
+<main class="container join-grid">
+
+    <!-- FORM -->
+    <section class="card form-card">
+        <h2>Become a Member</h2>
+
+        <form method="get" action="thankyou.html">
+
+            <label>First Name
+                <input type="text" name="fname" required autocomplete="given-name">
+            </label>
+
+            <label>Last Name
+                <input type="text" name="lname" required autocomplete="family-name">
+            </label>
+
+            <label>Organizational Title
+                <input type="text" name="orgtitle"
+                    pattern="[A-Za-z\s\-]{7,}"
+                    title="Minimum 7 characters, letters only">
+            </label>
+
+            <label>Email
+                <input type="email" name="email" required placeholder="email@example.com">
+            </label>
+
+            <label>Mobile Phone
+                <input type="tel" name="phone" required>
+            </label>
+
+            <label>Organization
+                <input type="text" name="organization" required autocomplete="organization">
+            </label>
+
+            <label>Membership Level
+                <select name="level" required>
+                    <option value="">Choose a level</option>
+                    <option value="np">NP</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <label>Description
+                <textarea name="description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Join Now" class="cta-btn">
+
+        </form>
+    </section>
+
+
+    <!-- MEMBERSHIP CARDS -->
+    <section class="cards">
+
+        <div class="member-card">
+            <h3>NP</h3>
+            <p>Free for non-profits</p>
+            <button data-modal="npModal">Benefits</button>
+        </div>
+
+        <div class="member-card bronze">
+            <h3>Bronze</h3>
+            <p>Basic exposure</p>
+            <button data-modal="bronzeModal">Benefits</button>
+        </div>
+
+        <div class="member-card silver">
+            <h3>Silver</h3>
+            <p>Advertising perks</p>
+            <button data-modal="silverModal">Benefits</button>
+        </div>
+
+        <div class="member-card gold">
+            <h3>Gold</h3>
+            <p>Premium spotlight</p>
+            <button data-modal="goldModal">Benefits</button>
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= MODALS ================= -->
+<dialog id="npModal"><p>Free membership for non-profits.</p><button class="close">Close</button></dialog>
+<dialog id="bronzeModal"><p>Events + training discounts.</p><button class="close">Close</button></dialog>
+<dialog id="silverModal"><p>Advertising + homepage spotlight.</p><button class="close">Close</button></dialog>
+<dialog id="goldModal"><p>All benefits + premium marketing.</p><button class="close">Close</button></dialog>
+
+</body>
+</html>
