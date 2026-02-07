@@ -1,0 +1,86 @@
+@media (min-width: 768px) {
+    /* HEADER */
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    nav {
+        display: block !important;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* HERO */
+    .hero img {
+        height: 400px;
+    }
+    
+    .hero-text {
+        padding: 2rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    
+    /* CONTENT GRID */
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* FOOTER */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* DIRECTORY */
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    /* CONTENT GRID */
+    .content-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .events {
+        grid-column: 1 / 3;
+    }
+    
+    .weather {
+        grid-column: 3 / 5;
+    }
+    
+    .forecast {
+        grid-column: 1 / 3;
+    }
+    
+    .highlights {
+        grid-column: 3 / 5;
+    }
+    
+    /* DIRECTORY */
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Montevideo - Attractions, culture and business opportunities">
+    <meta name="author" content="Gabriel Melo">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Discover Montevideo">
+    <meta property="og:description" content="Explore the main attractions and points of interest in Montevideo, Uruguay">
+    <meta property="og:image" content="https://gmelo20.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://gmelo20.github.io/wdd231/chamber/discovery.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/uruguai.png" type="image/x-icon">
+
+    <!-- CSS (MANTIDO IGUAL AO HOME) -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- DISCOVER PAGE CSS -->
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- DISCOVER SCRIPT -->
+    <script type="module" src="scripts/discover.js" defer></script>
+
+    <title>Discover Montevideo | Chamber of Commerce</title>
+</head>
+
+<body>
+
+<!-- ===== HEADER (IGUAL AO HOME) ===== -->
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <img src="images/hero.jpg" alt="Montevideo Chamber Logo">
+            <div>
+                <h1>Montevideo Chamber of Commerce</h1>
+                <p class="tagline">Uruguay's Business Network</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discovery.html" class="active">Discovery</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="date-banner">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Montevideo, Uruguay</span>
+    </div>
+</header>
+
+<!-- ===== MAIN CONTENT (NOVO) ===== -->
+<main class="container">
+
+    <!-- VISITOR MESSAGE -->
+    <section id="visit-message" class="visit-message" aria-live="polite"></section>
+
+    <!-- PAGE INTRO -->
+    <section class="discover-intro">
+        <h2>Discover Montevideo</h2>
+        <p>
+            Explore the cultural, historical and economic highlights that make Montevideo
+            a vibrant place to live, visit and invest.
+        </p>
+    </section>
+
+    <!-- GRID (CARDS VIA JS) -->
+    <section class="discover-grid">
+        <!-- Cards are dynamically inserted here -->
+    </section>
+
+</main>
+
+<!-- ===== FOOTER (IGUAL AO HOME) ===== -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><strong>Montevideo Chamber of Commerce</strong></p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. 18 de Julio 1234, Montevideo, Uruguay</p>
+                <p><i class="fas fa-envelope"></i> info@montevideochamber.com</p>
+                <p><i class="fas fa-phone"></i> +598 2 123 4567</p>
+            </div>
+
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="directory.html">Business Directory</a></li>
+                    <li><a href="join.html">Membership Benefits</a></li>
+                    <li><a href="discovery.html">Explore Montevideo</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="development-info">
+            <p>&copy; <span id="current-year"></span> Montevideo Chamber of Commerce | Gabriel Melo</p>
+            <p>WDD 231 - Web Frontend Development I | BYU-Idaho</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </div>
+</footer>
+
+<!-- GLOBAL SCRIPTS (MANTIDOS) -->
+<script src="scripts/navigation.js"></script>
+<script src="scripts/chamber.js"></script>
+
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 2rem;
+    }
+    
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+    
+    .home-grid {
+        grid-template-columns: 300px 1fr;
+        padding: 3rem;
+    }
+    
+    .profile {
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+    }
+    
+    .right-column {
+        gap: 3rem;
+    }
+    
+    .about, .certificates {
+        padding: 2.5rem;
+    }
+}
